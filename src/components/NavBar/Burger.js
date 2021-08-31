@@ -1,30 +1,47 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import RightNav from "./RightNav";
+
 const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  padding: 10px;
   position: fixed;
-  top: 15px;
-  right: 20px;
+  background-color: black;
+  top: 0;
+  right: 0;
   display: flex;
-
+  border-radius: 0;
   z-index: 20;
-  display: none;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  align-items: center;
+  ${"" /* gap: 10px; */}
 
-  @media (max-width: 760px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
+  :hover {
+    background-color: #f43d3d;
+    ${"" /* transform: scale(1.4); */}
   }
 
   div {
-    width: 2rem;
+    ${"" /* margin: 4px; */}
+    width: 3rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "#ccc" : "white")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+    align-items: center;
+    margin-left: ${({ open }) => (open ? "12px" : "0")};
+
+    &:nth-child(1):hover {
+      background-color: ${({ open }) => (open ? "" : "orange")};
+    }
+
+    &:nth-child(3):hover {
+      background-color: ${({ open }) => (open ? "" : "green")};
+    }
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
@@ -39,12 +56,18 @@ const StyledBurger = styled.div`
     }
   }
 `;
-
 function Burger() {
   const [open, setOpen] = useState(false);
+
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger
+        open={open}
+        onClick={() => {
+          setOpen(!open);
+          console.log(open);
+        }}
+      >
         <div />
         <div />
         <div />
