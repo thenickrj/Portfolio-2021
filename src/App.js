@@ -2,6 +2,7 @@ import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./NavBar";
 import NavBarOG from "./components/NavBar/NavBar";
+import Intro from "./components/Intro/Intro";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <Switch>
           <Route path="/nav">
             <NavBarOG />
+          </Route>
+          <Route path="/intro">
+            <Intro />
           </Route>
           <Route path="/users">
             {" "}
