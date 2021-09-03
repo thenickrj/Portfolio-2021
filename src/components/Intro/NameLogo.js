@@ -2,10 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const TextEffect = styled.div`
-  ${'' /* background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1)); */}
-  background: linear-gradient(rgb(167 165 178),rgb(49 5 91));
+  ${"" /* background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1)); */}
 
-  
   @import url("https://fonts.googleapis.com/css?family=Montserrat");
   body {
     background-color: #111;
@@ -30,7 +28,7 @@ const TextEffect = styled.div`
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 120px;
+    font-size: 3em;
     line-height: 0.75;
     margin: 10px 0;
   }
@@ -58,18 +56,18 @@ const TextEffect = styled.div`
   }
 `;
 
-function Test() {
+function NameLogo() {
   return (
     <TextEffect>
-      <div class="title">
+      <div className="title">
         <h1>
           Nikhil
-          <br />
-          Singh
+          {/* <br /> */}
+          &nbsp;&nbsp;Singh 🎛
         </h1>
       </div>
     </TextEffect>
   );
 }
 
-export default Test;
+export default NameLogo;

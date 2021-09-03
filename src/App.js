@@ -3,6 +3,8 @@ import "./App.css";
 import NavBar from "./NavBar";
 import NavBarOG from "./components/NavBar/NavBar";
 import Intro from "./components/Intro/Intro";
+import Test from "./components/Test/Test";
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -16,10 +18,14 @@ function App() {
             <Intro />
           </Route>
           <Route path="/users">
-            {" "}
             <NavBar />
           </Route>
-          <Route path="/">Home</Route>
+          <Route path="/test">
+            <Test />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </div>

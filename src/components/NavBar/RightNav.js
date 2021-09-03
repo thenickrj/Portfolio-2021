@@ -17,6 +17,7 @@ const Ul = styled.nav`
   width: 300px;
   padding-top: 3.5rem;
   transition: all 0.8s ease-in-out;
+  z-index:999;
   
   li {
     padding: 18px 30px;

@@ -1,383 +1,306 @@
 import React from "react";
 import styled from "styled-components";
 
-const IntroText = styled.div`
-  display: flex;
-  background-color: #252839;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  color: #252839;
-
-  .loading {
-    position: relative;
-    font-size: 2vw;
-    color: #01fe87;
-    -webkit-text-stroke: 0.3vw #383d52;
-    text-transform: uppercase;
-  }
-
-  .loading::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #01fe87;
-    -webkit-text-stroke: 0vw #383d52;
-    border-right: 2px solid #01fe87;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-  }
-
-  @keyframes animate {
-    0%,
-    10%,
-    100% {
-      width: 0;
-    }
-    70%,
-    90% {
-      width: 100%;
-    }
-  }
-
-  #btc {
-    width: 150px;
-    height: 100px;
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    background-image: url("	https://www.udemy.com/staticx/udemy/images/v/logo-coral.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;800;900&display=swap");
+const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 
   * {
-    overflow-x: hidden !important;
+    margin: 0;
   }
-  #cursor {
-    overflow: hidden;
-    position: fixed;
-    top: 200px;
-    left: 200px;
-  }
+
+  body,
   html {
-    cursor: none;
-  }
-  body {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden !important;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+    ${"" /* overflow: hidden; */}
   }
 
-  #homeSection {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  .container_intro_left {
+    ${"" /* width: 100%; */}
   }
-  #textHome {
-    overflow: hidden;
+
+  .container_intro_right {
+    ${
+      "" /* width: 100%;
+    height: 100vh; */
+    }
+    ${"" /* background: linear-gradient(rgb(49 5 91), rgb(167 165 178)); */}
+    ${"" /* opacity: 2; */}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ${"" /* border-radius: 15%; */}
+
+    .box {
+      width: 250px;
+      height: 250px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .title {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+
+        .block {
+          width: 0%;
+          height: inherit;
+          background: #ffb510;
+          position: absolute;
+          animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          display: flex;
+        }
+
+        h1 {
+          font-family: "Poppins";
+          color: #01fe87;
+          font-size: 3em;
+          -webkit-animation: mainFadeIn 2s forwards;
+          -o-animation: mainFadeIn 2s forwards;
+          animation: mainFadeIn 2s forwards;
+          animation-delay: 1.6s;
+          opacity: 0;
+          display: flex;
+          align-items: baseline;
+          position: relative;
+          white-space: nowrap;
+
+          span {
+            width: 0px;
+            height: 0px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            background: #ffb510;
+            -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92)
+              forwards;
+            animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+            animation-delay: 2s;
+            margin-left: 5px;
+            margin-top: -10px;
+            position: absolute;
+            bottom: 13px;
+            right: -12px;
+          }
+        }
+      }
+
+      .role {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin-top: -10px;
+
+        .block {
+          width: 0%;
+          height: inherit;
+          background: #e91e63;
+          position: absolute;
+          animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          animation-delay: 2s;
+          display: flex;
+        }
+
+        p {
+          animation: secFadeIn 2s forwards;
+          animation-delay: 3.2s;
+          opacity: 0;
+          font-weight: 400;
+          font-family: "Lato";
+          color: #01fe87;
+          font-size: 2em;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          white-space: nowrap;
+        }
+      }
+    }
   }
-  #textHomeSpan {
-    display: inline-block;
-    transform: translateY(50%);
+
+  @keyframes mainBlock {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
   }
-  #letter {
-    display: inline-block;
-    z-index: 99;
-    margin: 0;
-    color: #01fe87;
+
+  @keyframes secBlock {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
   }
-  .letter0 {
-    margin-left: 0.5%;
+
+  @keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  .head {
-    font-weight: 900;
-    font-size: 5em;
-    color: #01fe87;
+
+  @keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: #e9d856;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+    50% {
+      width: 10px;
+      height: 10px;
+      background: #e9d856;
+      opacity: 1;
+      bottom: 45px;
+    }
+    65% {
+      width: 7px;
+      height: 7px;
+      bottom: 0px;
+      width: 15px;
+    }
+    80% {
+      width: 10px;
+      height: 10px;
+      bottom: 20px;
+    }
+    100% {
+      width: 7px;
+      height: 7px;
+      background: #e9d856;
+      border: 0px solid #222;
+      bottom: 13px;
+    }
   }
-  .body {
-    font-size: 1.2em;
+
+  @keyframes secFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
   }
-  a {
-    text-decoration: underline;
-    color: inherit;
-  }
-  #textPosition {
-    overflow: hidden;
+
+  footer {
+    width: 350px;
+    height: 80px;
+    background: #ffb510;
     position: absolute;
-    width: 100%;
-    left: 0%;
-    top: 15%;
-    text-align: center;
-    height: 60%;
-  }
-  #group1 {
-    display: inline-block;
-  }
-  #group2 {
-    display: inline-block;
-  }
-  #group3 {
-    display: inline-block;
-  }
-  #group4 {
-    display: inline-block;
+    right: 0;
+    bottom: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: top 0.8s forwards;
+    animation-delay: 4s;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #232323;
+      font-family: "Poppins";
+
+      i {
+        margin-right: 25px;
+        font-size: 22px;
+        color: #232323;
+        animation: icon 2s forwards;
+        animation-delay: 4s;
+        opacity: 0;
+      }
+    }
   }
 
-  @media only screen and (max-width: 800px) {
-    #group1 {
-      display: block;
+  @keyframes top {
+    0% {
+      opacity: 0;
+      bottom: -80px;
     }
-    #group2 {
-      display: block;
+    100% {
+      opacity: 1;
+      bottom: 0px;
     }
-    #group3 {
-      display: block;
-    }
-    #group4 {
-      display: block;
-    }
+  }
 
-    .body {
-      font-size: 0.7em;
+  @keyframes icon {
+    0% {
+      opacity: 0;
+      transform: scale(0);
     }
-    .link {
-      font-size: 1em !important;
+    50% {
+      opacity: 1;
+      transform: scale(1.3) rotate(-02deg);
     }
-    .head {
-      font-weight: 900;
-      font-size: 5em;
-    }
-    #btc {
-      width: 150px;
-      height: 100px;
-      position: absolute;
-      right: 0%;
-      top: 2.5%;
-      background-image: url("	https://www.udemy.com/staticx/udemy/images/v/logo-coral.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
+    100% {
+      opacity: 1;
+      bottom: 0px;
     }
   }
 `;
 
 function Intro() {
-  const gsap = window.gsap;
-
-  let tl = gsap.timeline({ ease: "power1.in" });
-  function mouseCursor() {
-    window.onmousemove = handleMouseMove;
-    window.ontouchmove = handleTouchMove;
-    function handleMouseMove(e) {
-      e = e || window.e;
-      document.querySelector("#cursor").style.top = e.clientY + "px";
-      document.querySelector("#cursor").style.left = e.clientX + "px";
-    }
-    function handleTouchMove(e) {
-      e = e || window.e;
-      document.querySelector("#cursor").style.top = e.touches[0].clientY + "px";
-      document.querySelector("#cursor").style.left =
-        e.touches[0].clientX + "px";
-    }
-  }
-  mouseCursor();
-
-  function intro() {
-    tl.to("#textHomeSpan", {
-      y: "0%",
-      duration: 1,
-      onComplete: () => {
-        document.querySelector("#textHome").style.overflow = "visible";
-      },
-    });
-  }
-  intro();
-  let colors = ["#ff0a0a", "#609aff", "#6510e4", "#ba90fa", "#ffb879"];
-  let sizes = [12, -12];
-  let randomSize;
-  let randomColor;
-  let ogColor = "#01fe87";
-
-  let letters = document.querySelectorAll("#letter");
-
-  letters.forEach((element) => {
-    element.addEventListener("mouseenter", () => {
-      gsap.to("#cursor", {
-        scale: 2,
-        onStart: () => {
-          gsap.to("#circ", { stroke: colors[randomColor] });
-        },
-      });
-      randomColor = Math.floor(Math.random() * colors.length);
-      randomSize = Math.floor(Math.random() * sizes.length);
-      gsap.to(element, {
-        color: colors[randomColor],
-        rotate: sizes[randomSize],
-        y: `${sizes[randomSize]}%`,
-        duration: 0.5,
-      });
-    });
-    element.addEventListener("mouseleave", () => {
-      gsap.to("#cursor", {
-        scale: 1,
-        onStart: () => {
-          gsap.to("#circ", { stroke: ogColor });
-        },
-      });
-      gsap.to(element, { y: "0%", color: ogColor, rotate: 0, duration: 0.5 });
-    });
-    element.addEventListener("touchstart", () => {
-      gsap.to("#cursor", {
-        scale: 2,
-        onStart: () => {
-          gsap.to("#circ", { stroke: colors[randomColor] });
-        },
-      });
-      randomColor = Math.floor(Math.random() * colors.length);
-      randomSize = Math.floor(Math.random() * sizes.length);
-      gsap.to(element, {
-        color: colors[randomColor],
-        rotate: sizes[randomSize],
-        y: `${sizes[randomSize]}%`,
-        duration: 0.5,
-      });
-    });
-    element.addEventListener("touchend", () => {
-      gsap.to("#cursor", {
-        scale: 1,
-        onStart: () => {
-          gsap.to("#circ", { stroke: ogColor });
-        },
-      });
-      gsap.to(element, { y: "0%", color: ogColor, rotate: 0, duration: 0.5 });
-    });
-  });
-
   return (
-    <div>
-      Hi! I'm Nikhil Singh and I'm a Full Stack Developer!
-      <IntroText>
-        <h2 className="loading" data-text="Hi! I'm Nikhil Singh">
-          Hi! I'm Nikhil Singh and
-          <br /> I'm a Full Stack Developer!
-        </h2>
-        <h2 className="loading" data-text="I'm a Full Stack Developer!">
-          I'm a Full Stack Developer!
-        </h2>
-        <svg id="cursor" height="50" width="50">
-          <circle
-            cx="20"
-            cy="20"
-            r="18"
-            stroke="black"
-            stroke-width="2"
-            fill="transparent"
-            id="circ"
-          />
-          {/* <!-- coordinates are in x,y format --> */}
-          {/* <!-- points go clockwise around the polygon --> */}
-        </svg>
-        <div id="homeSection">
-          <div id="textPosition" className="left">
-            <div id="textHome" className="head">
-              <span id="textHomeSpan">
-                <div id="group1">
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    N
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    I
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    K
-                  </div>
-                </div>
-                <div id="group2">
-                  <div
-                    id="letter"
-                    style={{ color: "#01fe87" }}
-                    className="letter0"
-                  >
-                    H
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    I
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    L
-                  </div>
-                </div>
-                <div id="group3">
-                  <div
-                    id="letter"
-                    style={{ color: "#01fe87" }}
-                    className="letter0"
-                  >
-                    &nbsp; S
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    I
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    N
-                  </div>
-                </div>
-                <div id="group3">
-                  <div
-                    id="letter"
-                    style={{ color: "#01fe87" }}
-                    className="letter0"
-                  >
-                    G
-                  </div>
-                  <div id="letter" style={{ color: "#01fe87" }}>
-                    H
-                  </div>
-                  {/* <div id="letter">N</div> */}
-                </div>
-              </span>
+    <Container>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div style={{ display: "flex" }}>
+        <div className="container_intro_left">HERE will be the picture</div>
+        <div class="container_intro_right">
+          <div class="box">
+            <div class="title">
+              <span class="block"></span>
+              <h1>
+                Nikhil Singh<span></span>
+              </h1>
             </div>
-
-            <p id="textHome" className="body">
-              <span id="textHomeSpan">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </span>
-            </p>
-            <p id="textHome" className="body">
-              <span id="textHomeSpan">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </span>
-            </p>
-            <p id="textHome" className="body">
-              <span id="textHomeSpan">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </span>
-            </p>
-            <a
-              id="textHome"
-              className="body link"
-              href="https://www.udemy.com/course/javascript-animations-course-with-gsap-and-barbajs/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span
-                id="textHomeSpan"
-                // style="text-decoration: underline !important;"
-              >
-                Explore more
-              </span>
-            </a>
+            <hr />
+            <br />
+            <div class="role">
+              <div class="block"></div>
+              <p>Full Stack Developer</p>
+            </div>
           </div>
         </div>
-      </IntroText>
-    </div>
+      </div>
+
+      <a href="https://youtu.be/7d2XsPSjjjI" target="_blank">
+        <footer>
+          <div class="texto">
+            <span>
+              <i class="fab fa-youtube"></i>
+              watch on youtube
+            </span>
+          </div>
+        </footer>
+      </a>
+    </Container>
   );
 }
 
