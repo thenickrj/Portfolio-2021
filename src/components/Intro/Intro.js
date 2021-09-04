@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import nick from "../../images/nikhil.jpg";
 const Container = styled.div`
   @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 
@@ -17,6 +17,22 @@ const Container = styled.div`
     ${"" /* width: 100%; */}
   }
 
+  .img__border {
+    border: 1px solid black;
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .img__mine {
+    position: relative;
+    ${"" /* border: 1px solid black; */}
+    transition: all 0.8s ease-in-out;
+    width: 500px;
+    height: 600px;
+  }
+  .img__mine:hover {
+    transform: scale(1.2);
+  }
   .container_intro_right {
     ${
       "" /* width: 100%;
@@ -25,8 +41,10 @@ const Container = styled.div`
     ${"" /* background: linear-gradient(rgb(49 5 91), rgb(167 165 178)); */}
     ${"" /* opacity: 2; */}
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    margin-right: 10%;
     ${"" /* border-radius: 15%; */}
 
     .box {
@@ -55,7 +73,7 @@ const Container = styled.div`
 
         h1 {
           font-family: "Poppins";
-          color: #01fe87;
+          color: #ffffff;
           font-size: 3em;
           -webkit-animation: mainFadeIn 2s forwards;
           -o-animation: mainFadeIn 2s forwards;
@@ -112,10 +130,10 @@ const Container = styled.div`
           opacity: 0;
           font-weight: 400;
           font-family: "Lato";
-          color: #01fe87;
+          color: #ffffff;
           font-size: 2em;
           text-transform: uppercase;
-          letter-spacing: 5px;
+          ${"" /* letter-spacing: 5px; */}
           white-space: nowrap;
         }
       }
@@ -270,8 +288,13 @@ function Intro() {
       <br />
       <br />
       <br />
-      <div style={{ display: "flex" }}>
-        <div className="container_intro_left">HERE will be the picture</div>
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <div className="container_intro_left">
+          <div className="img__border">
+            <img className="img__mine" src={nick} alt="" />
+          </div>
+          HERE will be the picture
+        </div>
         <div class="container_intro_right">
           <div class="box">
             <div class="title">
