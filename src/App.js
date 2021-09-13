@@ -1,10 +1,11 @@
-import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
 import NavBarOG from "./components/NavBar/NavBar";
 import Intro from "./components/Intro/Intro";
-import Test from "./components/Test/Test";
+// import Test from "./components/Test/Test";
 import Home from "./Pages/Home";
+import ProjectsPage from "./Pages/ProjectsPage";
 
 function App() {
   return (
@@ -17,14 +18,17 @@ function App() {
           <Route path="/intro">
             <Intro />
           </Route>
-          <Route path="/users">
+          {/* <Route path="/users">
             <NavBar />
-          </Route>
-          <Route path="/test">
+          </Route> */}
+          {/* <Route path="/test">
             <Test />
-          </Route>
-          <Route path="/">
+          </Route> */}
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/project">
+            <ProjectsPage />
           </Route>
         </Switch>
       </Router>

@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const TextEffect = styled.div`
   ${"" /* background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1)); */}
-
-  @import url("https://fonts.googleapis.com/css?family=Montserrat");
+  @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+  ${"" /* @import url("https://fonts.googleapis.com/css?family=Montserrat"); */}
   body {
     background-color: #111;
   }
@@ -29,8 +29,10 @@ const TextEffect = styled.div`
     -webkit-background-clip: text;
     text-transform: uppercase;
     font-size: 3em;
-    line-height: 0.75;
+    ${"" /* line-height: 0.75; */}
     margin: 10px 0;
+    font-family: "Indie Flower", cursive;
+    ${"" /* font-family: "Allison", cursive; */}
   }
   /* styling my button */
 
@@ -51,8 +53,10 @@ const TextEffect = styled.div`
     background-color: #fff;
     color: #122;
   }
-  h1 {
-    font-family: "";
+  ${
+    "" /* h1 {
+    font-family: "Allison", cursive;
+  } */
   }
 `;
 

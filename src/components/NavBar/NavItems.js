@@ -9,16 +9,16 @@ const Ul = styled.nav`
   margin: 0;
   visibility: ${({ open }) => (open ? "visibile" : "hidden")}; */}
   flex-flow: column nowrap;
-  background:white;
+  background-color: #0d2538;
   position: fixed;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   left: ${({ open }) => (open ? "0" : "2000px")};
   height: 100vh;
-  width: 100%;
+  width: 300px;
   ${"" /* padding-top: 3.5rem; */}
   transition: all 0.8s ease-in-out;
-  z-index:1;
+  z-index:999;
   justify-content:space-around;
   
   li {
@@ -40,49 +40,28 @@ a{
   transform:scale(1.4);
 }
 
-.nav__menu{
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 0;
-  flex-flow: column nowrap;
-  background-color: #0d2538;
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 300px;
-  ${"" /* padding-top: 3.5rem; */}
-  z-index:1;
-  justify-content:space-around;
-}
-
 `;
-function RightNav({ open }) {
+function NavItems({ open }) {
   console.log("a", open);
 
   return (
     <Ul open={open}>
-      <div className="nav__menu">
-        <div>
-          <li className="links">
-            <Link to="/">Home</Link>
-          </li>
-        </div>
-        <li className="links">
-          <Link to="/project">Projects</Link>
-        </li>
-        <li className="links">
-          <Link to="/project">Resume</Link>
-        </li>
-        <li className="links">
-          <Link to="/project">Contact</Link>
-        </li>
-      </div>
-      <div>
-        <h1>Nikhil</h1>
-      </div>
+      {/* <div className="nav__menu"> */}
+      <Link to="/">
+        <li className="links">Home</li>
+      </Link>
+      <li className="links">
+        <Link to="/project">Projects</Link>
+      </li>
+      <li className="links">
+        <Link to="/project">Resume</Link>
+      </li>
+      <li className="links">
+        <Link to="/project">Contact</Link>
+      </li>{" "}
+      {/* </div> */}
     </Ul>
   );
 }
 
-export default RightNav;
+export default NavItems;
