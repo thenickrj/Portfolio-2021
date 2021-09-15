@@ -56,29 +56,44 @@ a{
   justify-content:space-around;
 }
 
+
+.nav_right{
+  width:100%;
+  height:100vh;
+  background:linear-gradient(45deg, #0d2538, transparent);
+}
 `;
-function RightNav({ open }) {
+function RightNav({ open, setOpen }) {
   console.log("a", open);
 
   return (
     <Ul open={open}>
       <div className="nav__menu">
         <div>
-          <li className="links">
+          <li
+            onClick={() => {
+              setOpen(false);
+            }}
+            className="links"
+          >
             <Link to="/">Home</Link>
           </li>
         </div>
-        <li className="links">
+        <li onClick={() => {
+              setOpen(false);
+            }} className="links">
           <Link to="/project">Projects</Link>
         </li>
         <li className="links">
-          <Link to="/project">Resume</Link>
+          <a href="https://drive.google.com/file/d/1IDSMAOknIh2F0Etzcbk369dsaAmboPpk/view">
+            Resume
+          </a>
         </li>
         <li className="links">
           <Link to="/project">Contact</Link>
         </li>
       </div>
-      <div>
+      <div className="nav_right">
         <h1>Nikhil</h1>
       </div>
     </Ul>

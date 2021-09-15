@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { Fade } from "react-reveal";
 import nick from "../../images/nikhil.jpg";
+
 const Container = styled.div`
   @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 
@@ -32,8 +34,10 @@ const Container = styled.div`
     position: relative;
     ${"" /* border: 1px solid black; */}
     transition: all 0.8s ease-in-out;
-    width: 300px;
+    width: 400px;
     height: 300px;
+    margin: 0 0 0 -22%;
+
   }
 
   .img__mine:hover {
@@ -153,12 +157,12 @@ const Container = styled.div`
       left: 0;
     }
     50% {
-      width: 100%;
+      width: 105%;
       left: 0;
     }
     100% {
       width: 0;
-      left: 100%;
+      left: 105%;
     }
   }
 
@@ -168,12 +172,12 @@ const Container = styled.div`
       left: 0;
     }
     50% {
-      width: 100%;
+      width: 155%;
       left: 0;
     }
     100% {
       width: 0;
-      left: 100%;
+      left: 155%;
     }
   }
 
@@ -303,11 +307,14 @@ function Intro() {
         className="container_intro"
         style={{ display: "flex", justifyContent: "space-around" }}
       >
+              <Fade left duration={1000}>
+
         <div className="container_intro_left">
           <div className="img__border">
             <img className="img__mine" src={nick} alt="" />
           </div>
         </div>
+</Fade>
         <div class="container_intro_right">
           <div class="box">
             <div class="title">

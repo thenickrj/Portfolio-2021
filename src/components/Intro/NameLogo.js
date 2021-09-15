@@ -28,7 +28,8 @@ const TextEffect = styled.div`
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 400;
     ${"" /* line-height: 0.75; */}
     margin: 10px 0;
     font-family: "Indie Flower", cursive;
@@ -67,7 +68,8 @@ function NameLogo() {
         <h1>
           Nikhil
           {/* <br /> */}
-          &nbsp;&nbsp;Singh 🎛
+          &nbsp;Singh
+          {/* 🎛 */}
         </h1>
       </div>
     </TextEffect>

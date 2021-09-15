@@ -75,6 +75,8 @@ const Container = styled.div`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+    border: 2px solid black;
   }
   .project_link {
     position: fixed;
@@ -82,8 +84,8 @@ const Container = styled.div`
   }
 
   .project_link:hover {
-    background: linear-gradient(rgb(255 255 255), rgb(166 165 173));
-    background-size: auto;
+    ${"" /* background: linear-gradient(rgb(255 255 255), rgb(166 165 173)); */}
+    ${"" /* background-size: auto; */}
   }
 
   h2 {
@@ -113,7 +115,7 @@ function Projects() {
                     color: "white",
                   }}
                 >
-                  The 🍌 Talk1
+                  Calendar App
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -122,6 +124,47 @@ function Projects() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a href="https://thenickrj.github.io/Banana-Speak/">
+                    Click Here!
+                    {/* <img
+                      style={{
+                        // borderRadius: "50%",
+                        width: "60%",
+                        height: "80%",
+                        // marginBottom: "15%",
+                        justifyContent: "center",
+                        margin: "auto",
+                        position: "relative",
+                        top: "25%",
+                      }}
+                      src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png"
+                    /> */}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2
+                  style={{
+                    position: "relative",
+                    top: "31%",
+                    fontSize: "32px",
+                    color: "white",
+                  }}
+                >
+                  Employee Portal
+                </h2>
+              </div>
+              <div class="flip-box-back">
+                <div
+                  class="project_link"
+                  style={{ position: "relative", top: "32%" }}
+                >
+                  <a href="https://employeeportal-app.netlify.app/">
                     Click Here!
                   </a>
                 </div>
@@ -141,7 +184,7 @@ function Projects() {
                     color: "white",
                   }}
                 >
-                  The 🍌 Talk2
+                  Movies App
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -149,7 +192,7 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://thenickrj.github.io/Banana-Speak/">
+                  <a href="https://confident-pike-12ed13.netlify.app/">
                     Click Here!
                   </a>
                 </div>
@@ -169,7 +212,7 @@ function Projects() {
                     color: "white",
                   }}
                 >
-                  The 🍌 Talk3
+                  PicGram
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -177,7 +220,33 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://thenickrj.github.io/Banana-Speak/">
+                  <a href="https://picgram-99e7f.web.app/">Click Here!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2
+                  style={{
+                    position: "relative",
+                    top: "31%",
+                    fontSize: "32px",
+                    color: "white",
+                  }}
+                >
+                  Covid Tracker
+                </h2>
+              </div>
+              <div class="flip-box-back">
+                <div
+                  class="project_link"
+                  style={{ position: "relative", top: "32%" }}
+                >
+                  <a href="https://thenickrj.github.io/Covid-Tracker/">
                     Click Here!
                   </a>
                 </div>
@@ -197,7 +266,7 @@ function Projects() {
                     color: "white",
                   }}
                 >
-                  The 🍌 Talk4
+                  Chat App
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -205,63 +274,7 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://thenickrj.github.io/Banana-Speak/">
-                    Click Here!
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <h2
-                  style={{
-                    position: "relative",
-                    top: "31%",
-                    fontSize: "32px",
-                    color: "white",
-                  }}
-                >
-                  The 🍌 Talk5
-                </h2>
-              </div>
-              <div class="flip-box-back">
-                <div
-                  class="project_link"
-                  style={{ position: "relative", top: "32%" }}
-                >
-                  <a href="https://thenickrj.github.io/Banana-Speak/">
-                    Click Here!
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <h2
-                  style={{
-                    position: "relative",
-                    top: "31%",
-                    fontSize: "32px",
-                    color: "white",
-                  }}
-                >
-                  The 🍌 Talk6
-                </h2>
-              </div>
-              <div class="flip-box-back">
-                <div
-                  class="project_link"
-                  style={{ position: "relative", top: "32%" }}
-                >
-                  <a href="https://thenickrj.github.io/Banana-Speak/">
+                  <a href="https://whats-app-clone-e749e.web.app/">
                     Click Here!
                   </a>
                 </div>
