@@ -6,7 +6,7 @@ import nick from "../../images/nikhil.jpg";
 const Container = styled.div`
   @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 
-  margin-top: 15%;
+  margin-top: 10%;
 
   * {
     margin: 0;
@@ -37,13 +37,17 @@ const Container = styled.div`
     width: 400px;
     height: 300px;
     margin: 0 0 0 -22%;
-
   }
 
   .img__mine:hover {
     transform: scale(1.2);
   }
 
+  @media (max-width: 500px) {
+    .role {
+      font-size: 25px;
+    }
+  }
   .container_intro_right {
     ${
       "" /* width: 100%;
@@ -307,14 +311,13 @@ function Intro() {
         className="container_intro"
         style={{ display: "flex", justifyContent: "space-around" }}
       >
-              <Fade left duration={1000}>
-
-        <div className="container_intro_left">
-          <div className="img__border">
-            <img className="img__mine" src={nick} alt="" />
+        <Fade left duration={1000}>
+          <div className="container_intro_left">
+            <div className="img__border">
+              <img className="img__mine" src={nick} alt="" />
+            </div>
           </div>
-        </div>
-</Fade>
+        </Fade>
         <div class="container_intro_right">
           <div class="box">
             <div class="title">
@@ -327,7 +330,7 @@ function Intro() {
             <br />
             <div class="role">
               <div class="block"></div>
-              <p>Full Stack Developer</p>
+              <p className="role">Full Stack Developer</p>
             </div>
           </div>
         </div>

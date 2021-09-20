@@ -5,7 +5,66 @@ const Container = styled.div`
   background: linear-gradient(rgb(167 165 178), rgb(0 0 0));
   height: auto;
   padding-bottom: 5%;
+  font-family: "Poppins", sans-serif;
 
+  :root {
+    --colorMain: #c0c0c0;
+    --brShadow: -6px 6px 15px rgba(0, 0, 0, 0.5);
+    --tlShadow: 6px -6px 15px rgba(255, 255, 255, 0.8);
+  }
+
+  .heading {
+    color: #d0cdcd;
+    justify-content: center;
+    ${"" /* background: #c0c0c0; */}
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    ${"" /* font-family: sans-serif; */}
+    ${"" /* text-transform: uppercase; */}
+    text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.5),
+      -6px 6px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      background: #c0c0c0;
+      content: "";
+      border-radius: 10%;
+    }
+
+    ${
+      "" /* &::before {
+      left: 0;
+      width: 100px;
+      height: 100px;
+      top: -150px;
+      z-index: 10;
+      box-shadow: inset -6px 6px 15px rgba(0, 0, 0, 0.5),
+        inset -6px 6px 15px rgba(0, 0, 0, 0.5);
+    } */
+    }
+    ${
+      "" /* &::after {
+      left: -50px;
+      width: 200px;
+      height: 200px;
+      top: -200px;
+      box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.5),
+        -6px 6px 15px rgba(0, 0, 0, 0.5);
+    } */
+    }
+  }
+  ${
+    "" /* .heading {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#8f00ff, #e00bbe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5%;
+  } */
+  }
   .project__container {
     align-items: center;
     max-width: 1200px;
@@ -101,7 +160,7 @@ function Projects() {
     <Container>
       <br />
       <br />
-      <br />
+      <h1 className="heading">Projects</h1>
       <div className="project__container">
         <div className="card">
           <div class="flip-box">

@@ -12,7 +12,7 @@ const Nav = styled.nav`
   display: flex;
   ${"" /* padding: 0 20px; */}
   justify-content: space-between;
-
+  font-family: "Poppins", sans-serif;
   li {
     padding: 18px 30px;
   }
