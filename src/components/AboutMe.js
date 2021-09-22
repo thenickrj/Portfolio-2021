@@ -19,8 +19,8 @@ const Container = styled.div`
     line-height: 1.5rem;
   }
 
-  .skills-main-div {
-  }
+  ${'' /* .skills-main-div {
+  } */}
 
   @media (max-width: 750px) {
     .subTitle {
