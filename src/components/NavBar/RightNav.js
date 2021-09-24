@@ -161,7 +161,7 @@ function RightNav({ open, setOpen }) {
           <img className="phone_talk_img" src={phoneTalk} alt="" />
         </Fade>
         <div className="flex__col">
-          <h2>Contact</h2>
+          <h2>Contact Me!</h2>
           <div className="social_handles_contain">
             <img className="social_handles" src={github} alt="" />
             <img className="social_handles" src={gmail} alt="" />
