@@ -19,8 +19,10 @@ const Container = styled.div`
     line-height: 1.5rem;
   }
 
-  ${'' /* .skills-main-div {
-  } */}
+  ${
+    "" /* .skills-main-div {
+  } */
+  }
 
   @media (max-width: 750px) {
     .subTitle {
@@ -45,8 +47,8 @@ function AboutMe() {
           <div className="skills-text-div">
             <h1 className="skills-heading">About Me 👦 </h1>
             <p className="subTitle skills-text-subtitle">
-              Hey there👋 , I am currently pursuing B.Tech ( Computer
-              Engineering ) . My curiosity levels are as fresh as when I was a
+              Hey there👋 , I am B.Tech Graduate in Computer Science, graduated
+              in the year 2021. My curiosity levels are as fresh as when I was a
               child. I believe in eternal learning and deliberate effort as they
               are the only way to become the smartest in the room . I am a good
               timekeeper, always willing to learn new skills.

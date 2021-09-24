@@ -151,7 +151,18 @@ const Container = styled.div`
     font-family: "Courier New", Courier, monospace;
   }
   a {
+    pointer: cursor;
     text-decoration: none;
+    font-weight: 400;
+  }
+
+  a:hover {
+    color: red;
+  }
+  button {
+    font-size: 32px;
+    border: none;
+    background: none;
   }
 `;
 
@@ -182,21 +193,12 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://thenickrj.github.io/Banana-Speak/">
+                  <a
+                    href="https://thenickrj.github.io/Banana-Speak/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Click Here!
-                    {/* <img
-                      style={{
-                        // borderRadius: "50%",
-                        width: "60%",
-                        height: "80%",
-                        // marginBottom: "15%",
-                        justifyContent: "center",
-                        margin: "auto",
-                        position: "relative",
-                        top: "25%",
-                      }}
-                      src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png"
-                    /> */}
                   </a>
                 </div>
               </div>
@@ -223,7 +225,11 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://employeeportal-app.netlify.app/">
+                  <a
+                    href="https://employeeportal-app.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Click Here!
                   </a>
                 </div>
@@ -251,7 +257,11 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://confident-pike-12ed13.netlify.app/">
+                  <a
+                    href="https://confident-pike-12ed13.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Click Here!
                   </a>
                 </div>
@@ -279,7 +289,13 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://picgram-99e7f.web.app/">Click Here!</a>
+                  <a
+                    href="https://picgram-99e7f.web.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Click Here!
+                  </a>
                 </div>
               </div>
             </div>
@@ -305,7 +321,11 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://thenickrj.github.io/Covid-Tracker/">
+                  <a
+                    href="https://thenickrj.github.io/Covid-Tracker/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Click Here!
                   </a>
                 </div>
@@ -333,7 +353,11 @@ function Projects() {
                   class="project_link"
                   style={{ position: "relative", top: "32%" }}
                 >
-                  <a href="https://whats-app-clone-e749e.web.app/">
+                  <a
+                    href="https://whats-app-clone-e749e.web.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Click Here!
                   </a>
                 </div>

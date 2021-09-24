@@ -22,6 +22,7 @@ const Container = styled.div`
   }
 
   .img__border {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 1px solid black;
     width: 300px;
     height: 300px;
