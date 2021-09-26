@@ -22,6 +22,7 @@ const TextEffect = styled.div`
   }
 
   h1 {
+    opacity: 0.4;
     background-image: url(https://64.media.tumblr.com/c475372dc160cb01030f2cc3cd84bdfa/tumblr_npqmd9lbGK1s2t3cto1_500.gifv);
     background-size: cover;
     color: transparent;

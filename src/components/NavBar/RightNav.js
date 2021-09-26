@@ -147,12 +147,16 @@ function RightNav({ open, setOpen }) {
           <Link to="/project">Projects</Link>
         </li>
         <li className="links">
-          <a href="https://drive.google.com/file/d/1IDSMAOknIh2F0Etzcbk369dsaAmboPpk/view">
+          <a
+            href="https://drive.google.com/file/d/1IDSMAOknIh2F0Etzcbk369dsaAmboPpk/view"
+            target="_blank"
+            rel="noreferrer"
+          >
             Resume
           </a>
         </li>
         <li className="links">
-          <Link to="/project">Blogs</Link>
+          <Link to="/blogs">Blogs</Link>
         </li>
       </div>
       <div className="nav_right">

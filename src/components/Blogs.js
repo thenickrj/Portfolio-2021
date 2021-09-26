@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   background: linear-gradient(rgb(167 165 178), rgb(0 0 0));
   height: auto;
+  min-height: 100vh;
   padding-bottom: 5%;
   font-family: "Poppins", sans-serif;
 
@@ -166,12 +167,12 @@ const Container = styled.div`
   }
 `;
 
-function Projects() {
+function Blogs() {
   return (
     <Container>
       <br />
       <br />
-      <h1 className="heading">Projects</h1>
+      <h1 className="heading">Blogs</h1>
       <div className="project__container">
         <div className="card">
           <div class="flip-box">
@@ -194,7 +195,7 @@ function Projects() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a
-                    href="https://github.com/thenickrj/Calendar-App"
+                    href="https://thenickrj.github.io/Banana-Speak/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -269,7 +270,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="card">
+        {/* <div className="card">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -363,11 +364,11 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </Container>
   );
 }
 
-export default Projects;
+export default Blogs;

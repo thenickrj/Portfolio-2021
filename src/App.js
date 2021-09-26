@@ -6,6 +6,7 @@ import Intro from "./components/Intro/Intro";
 // import Test from "./components/Test/Test";
 import Home from "./Pages/Home";
 import ProjectsPage from "./Pages/ProjectsPage";
+import BlogsPage from "./Pages/BlogsPage";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/project">
             <ProjectsPage />
+          </Route>
+          <Route path="/blogs">
+            <BlogsPage />
           </Route>
         </Switch>
       </Router>

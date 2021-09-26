@@ -46,7 +46,7 @@ const Container = styled.div`
 
   @media (max-width: 500px) {
     .role {
-      font-size: 25px;
+      font-size: 0.7em;
     }
   }
   .container_intro_right {
