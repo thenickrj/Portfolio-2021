@@ -83,7 +83,7 @@ function Blog3() {
   return (
     <Container dark={dark}>
       <div className="contain">
-        <h5>Dark Mode!</h5>
+        <h5>Dark Mode feature!</h5>
         <label class="switch">
           <input type="checkbox" onChange={(e) => setDark(!dark)} />
           <span class="slider round"></span>
