@@ -7,6 +7,7 @@ import github from "../../icons/github.png";
 import gmail from "../../icons/gmail.png";
 import instagram from "../../icons/instagram-sketched.png";
 import linkedin from "../../icons/linkedin.png";
+import devTo from "../../icons/devTo.png";
 import twitter from "../../icons/twitter.png";
 import { Fade } from "react-reveal";
 
@@ -167,12 +168,50 @@ function RightNav({ open, setOpen }) {
         <div className="flex__col">
           <h2>Contact Me!</h2>
           <div className="social_handles_contain">
-            <img className="social_handles" src={github} alt="" />
-            <img className="social_handles" src={gmail} alt="" />
-            <img className="social_handles" src={linkedin} alt="" />
-            <img className="social_handles" src={twitter} alt="" />
-            <img className="social_handles" src={instagram} alt="" />
-            <img className="social_handles" src={codepen} alt="" />
+            <a
+              href="https://github.com/thenickrj"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="social_handles" src={github} alt="" />
+            </a>
+            <a
+              href="mailto:nikhilbangalor@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="social_handles" src={gmail} alt="" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nikhil--singh/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="social_handles" src={linkedin} alt="" />
+            </a>
+            <a
+              href="https://twitter.com/TheNickRJ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="social_handles" src={twitter} alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/thenickrj/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="social_handles" src={instagram} alt="" />
+            </a>
+            <a href="https://dev.to/thenickrj" target="_blank" rel="noreferrer">
+              <img
+                style={{ borderRadius: "10px" }}
+                className="social_handles"
+                src={devTo}
+                alt=""
+              />
+            </a>
           </div>
         </div>
         <div className="flex__row"></div>

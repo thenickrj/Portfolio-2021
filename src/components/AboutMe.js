@@ -49,9 +49,9 @@ function AboutMe() {
             <p className="subTitle skills-text-subtitle">
               Hey there👋 , I'm a B.Tech Graduate in Computer Science, graduated
               in the year 2021. My curiosity levels are as fresh as when I was a
-              child. I believe in eternal learning and deliberate effort as they
-              are the only way to become the smartest in the room . I am a good
-              timekeeper, always willing to learn new skills.
+              child. I believe in eternal learning and deliberate effort aiming
+              to always be a better version of myself. I am a good timekeeper,
+              always willing to learn new skills.
             </p>
             <br />
             <Skills />

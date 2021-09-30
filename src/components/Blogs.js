@@ -117,7 +117,7 @@ const Container = styled.div`
 
   .flip-box-front {
     /* background-image: url("https://images.pexels.com/photos/1262304/pexels-photo-1262304.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
-    background: linear-gradient(rgb(14 9 48), rgb(249 9 9));
+    background: linear-gradient(rgb(14 9 48), rgb(0 128 255));
     color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -181,12 +181,12 @@ function Blogs() {
                 <h2
                   style={{
                     position: "relative",
-                    top: "31%",
-                    fontSize: "32px",
+                    top: "25%",
+                    fontSize: "25px",
                     color: "white",
                   }}
                 >
-                  Calendar App
+                  Dark Mode: Conditional Styling using styled-components
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -195,7 +195,7 @@ function Blogs() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a
-                    href="https://thenickrj.github.io/Banana-Speak/"
+                    href="https://dev.to/thenickrj/dark-mode-conditional-styling-using-styled-components-4dm3"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -213,12 +213,13 @@ function Blogs() {
                 <h2
                   style={{
                     position: "relative",
-                    top: "31%",
-                    fontSize: "32px",
+                    top: "25%",
+                    fontSize: "25px",
                     color: "white",
                   }}
                 >
-                  Employee Portal
+                  Create Your First React Native App and run it in your phone
+                  under 5 minutes
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -227,7 +228,7 @@ function Blogs() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a
-                    href="https://employeeportal-app.netlify.app/"
+                    href="https://thenickrj.medium.com/create-your-first-react-native-app-and-run-it-in-your-phone-under-5-minutes-91fa1886dc62"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -245,12 +246,12 @@ function Blogs() {
                 <h2
                   style={{
                     position: "relative",
-                    top: "31%",
-                    fontSize: "32px",
+                    top: "25%",
+                    fontSize: "25px",
                     color: "white",
                   }}
                 >
-                  Movies App
+                  My Internship Experience at a Startup
                 </h2>
               </div>
               <div class="flip-box-back">
@@ -259,7 +260,7 @@ function Blogs() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a
-                    href="https://confident-pike-12ed13.netlify.app/"
+                    href="https://thenickrj.medium.com/my-internship-experience-at-a-startup-539b582c88ce"
                     target="_blank"
                     rel="noreferrer"
                   >

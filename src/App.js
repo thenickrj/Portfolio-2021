@@ -7,6 +7,7 @@ import Intro from "./components/Intro/Intro";
 import Home from "./Pages/Home";
 import ProjectsPage from "./Pages/ProjectsPage";
 import BlogsPage from "./Pages/BlogsPage";
+import Blog3 from "./Pages/Blog3";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/blogs">
             <BlogsPage />
+          </Route>
+          <Route path="/blog3">
+            <Blog3 />
           </Route>
         </Switch>
       </Router>
