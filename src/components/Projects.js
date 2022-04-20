@@ -185,6 +185,38 @@ function Projects() {
                     color: "white",
                   }}
                 >
+                  Shop It
+                </h2>
+              </div>
+              <div class="flip-box-back">
+                <div
+                  class="project_link"
+                  style={{ position: "relative", top: "32%" }}
+                >
+                  <a
+                    href="https://my-shop-it-app.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Click Here!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2
+                  style={{
+                    position: "relative",
+                    top: "31%",
+                    fontSize: "32px",
+                    color: "white",
+                  }}
+                >
                   Calendar App
                 </h2>
               </div>
@@ -194,7 +226,39 @@ function Projects() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a
-                    href="https://github.com/thenickrj/Calendar-App"
+                    href="https://thenick-calendar.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Click Here!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2
+                  style={{
+                    position: "relative",
+                    top: "31%",
+                    fontSize: "32px",
+                    color: "white",
+                  }}
+                >
+                  Post It
+                </h2>
+              </div>
+              <div class="flip-box-back">
+                <div
+                  class="project_link"
+                  style={{ position: "relative", top: "32%" }}
+                >
+                  <a
+                    href="https://just-post-it.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -360,6 +424,32 @@ function Projects() {
                   >
                     Click Here!
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2
+                  style={{
+                    position: "relative",
+                    top: "31%",
+                    fontSize: "32px",
+                    color: "white",
+                  }}
+                >
+                  Anime Arena
+                </h2>
+              </div>
+              <div class="flip-box-back">
+                <div
+                  class="project_link"
+                  style={{ position: "relative", top: "32%" }}
+                >
+                  <h5 style={{ color: "red" }}>Work under progress🔨 </h5>
                 </div>
               </div>
             </div>
