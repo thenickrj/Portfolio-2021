@@ -194,7 +194,7 @@ function Projects() {
                   style={{ position: "relative", top: "32%" }}
                 >
                   <a
-                    href="https://my-shop-it-app.herokuapp.com/"
+                    href="https://shop-it-app.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
